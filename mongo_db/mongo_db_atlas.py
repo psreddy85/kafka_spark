@@ -2,7 +2,7 @@
 """
 Created on Mon Feb  8 06:06:50 2021
 
-@author: AvnishYadav
+@author: Abc xyz
 """
 # importing mongodb file
 import ssl
@@ -19,8 +19,8 @@ class MongoDBOperation:
             if user_name is None or password is None:
                 # creating initial object to fetch mongodb credentials
                 credentials = {
-                    "user_name": "avnyadav",
-                    "password": "Aa327030"
+                    "user_name": "psreddy85",
+                    "password": "sharath85"
                 }  # get_mongo_db_credentials()  # return dictionary with user name and password
                 self.__user_name = credentials['user_name']
                 self.__password = credentials['password']
@@ -52,10 +52,11 @@ class MongoDBOperation:
     def get_database_client_object(self):
         """
         Return pymongoClient object to perform action with MongoDB
+        mongodb+srv://psreddy85:<password>@cluster0.3u1yn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
         """
         try:
 
-            url = 'mongodb+srv://{0}:{1}@cluster0.wz7et.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'.format(
+            url = 'mongodb+srv://{0}:{1}@cluster0.3u1yn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'.format(
                 self.__user_name, self.__password)
             client = pymongo.MongoClient(url, ssl_cert_reqs=ssl.CERT_NONE)  # creating database client object
             return client

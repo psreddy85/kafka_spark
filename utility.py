@@ -62,7 +62,7 @@ def get_logger_object_of_training(config_path: str, collection_name, execution_i
     if execution_id is None:
         execution_id = str(uuid.uuid4())
     if executed_by is None:
-        executed_by = "Avnish Yadav"
+        executed_by = "abc xyz"
     logger = AppLogger(project_id=5, log_database=database_name, log_collection_name=collection_name,
                        execution_id=execution_id, executed_by=executed_by)
     return logger
@@ -75,7 +75,7 @@ def get_logger_object_of_prediction(config_path: str, collection_name, execution
     if execution_id is None:
         execution_id = str(uuid.uuid4())
     if executed_by is None:
-        executed_by = "Avnish Yadav"
+        executed_by = "abc xyz"
     logger = AppLogger(project_id=5, log_database=database_name, log_collection_name=collection_name,
                        execution_id=execution_id, executed_by=executed_by)
     return logger

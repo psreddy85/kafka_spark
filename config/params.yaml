@@ -14,7 +14,7 @@ cloud_provider:
   name: microsoft
 
 data_download:
-  cloud_training_directory_path: data/training_batch_files/
+  cloud_training_directory_path: data/training_batch_files
   cloud_prediction_directory_path: data/Prediction_Batch_files
 
 artifacts:
