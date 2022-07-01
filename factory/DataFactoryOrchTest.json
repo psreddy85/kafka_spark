@@ -1,0 +1,9 @@
+{
+	"name": "DataFactoryOrchTest",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f12a5594-313d-4a5d-be07-c904e03db5f3",
+		"tenantId": "30a7efd6-7f05-437d-bc19-e7c6df3892f1"
+	}
+}
